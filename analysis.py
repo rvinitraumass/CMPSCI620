@@ -76,7 +76,6 @@ def plot_real_vs_artificial_exam(data):
 def plot_real_vs_artificial_Ftest_MI(method_data):
     plt.figure(2, figsize=(18, 10))
     i = 0
-    print("-" * 50)
     for method in method_data.keys():
         plt.subplot(1, 7, i + 1)
         plt.scatter(method_data[method]['data_x'], method_data[method]['data_y'])
@@ -89,7 +88,6 @@ def plot_real_vs_artificial_Ftest_MI(method_data):
 
 def plot_r2_scores(r2_scores):
     plt.figure(3, figsize=(18, 10))
-    print("-" * 50)
     width = 0.5
     scores = [abs(num) for num in r2_scores.values()]
     ind = np.arange(len(r2_scores.keys()))
